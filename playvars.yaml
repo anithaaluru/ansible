@@ -1,14 +1,14 @@
-- name: coaching centre
+- name: play level variables
   tasks: local
   connection: local
   vars: 
-  - COURSE: ansible
-    DURATION: 1 hr
-    TRAINER NAME: sivakumar
-    tasks: 
-    - name: print the details
-      ansible.builtin.debug:
-       msg: Hello "{{ COURSE }}"", course duration: "{{ DURATION }}", trainer: "{{ TRAINER NAME }}"
+   COURSE: ansible
+   DURATION: 1 hr
+   TRAINER NAME: sivakumar
+  tasks: 
+  - name: print the details
+    ansible.builtin.debug:
+     msg: Hello "{{ COURSE }}"", course Duration: "{{ DURATION }}", trainer: "{{ TRAINER NAME }}"
  
   
    
