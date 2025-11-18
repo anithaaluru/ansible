@@ -5,8 +5,7 @@
     ansible.builtin.service:
       name: nginx
       state: present
-
   - name: start the nginx
     ansible.builtin.service:
       name: nginx
-      state: absent
+      state: started
