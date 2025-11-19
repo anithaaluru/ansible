@@ -1,11 +1,11 @@
 - name: giving vars by prompt
   hosts: local
   connection: local
-  vars: 
-   - course: USERNAME
+  vars-prompt:
+   - name: USERNAME
      prompt: enter your USERNAME
      private: false
-   - course: PASSWORD
+   - name: PASSWORD
      prompt: enter your PASSWORD
      private: true
   tasks:
