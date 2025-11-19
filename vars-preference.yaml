@@ -17,9 +17,9 @@
      msg: "{{ GREETING }}"
 
 
-
-     #1.task
-     #2.file
-     #3.prompt
-     #4.play
-     #5.
+     #1.command line or args
+     #2.task
+     #3.file
+     #4.prompt
+     #5.play
+     #6.inventory
