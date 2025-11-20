@@ -4,16 +4,16 @@
   vars:
     COURSE: "DevSecOps with AWS" #string
     DURATION: 120 #number
-    IS_LIVE?: true #boolean
+    IS_LIVE: true #boolean
     TOOLS: #[lists starts with -]
     - linux
     - shell
     - ansible
     CONCEPTS: #[dictionary or objects or map like key:value]
       CI: Jenkins
-      script: shell,ansible
+      SCRIPT: shell,ansible
   tasks:
   - name: print the information
     ansible.builtin.debug:
-     msg: "course is: {{ COURSE }}, Duration is: {{ DURATION }}, is_live?: {{ IS_LIVE }}, Tools are: {{ TOOLS }}, Concepts are: {{ CONCEPTS }}"
+      msg: "course is: {{ COURSE }}, Duration is: {{ DURATION }}, is_live?: {{ IS_LIVE }}, Tools are: {{ TOOLS }}, Concepts are: {{ CONCEPTS }}"
 
