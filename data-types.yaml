@@ -2,9 +2,9 @@
   hosts: local
   connection: local
   vars:
-  COURSE: "DevSecOps with AWS" #string
-  DURATION: 120 #number
-  IS_LIVE?: true #boolean
+  - COURSE: "DevSecOps with AWS" #string
+  - DURATION: 120 #number
+  - IS_LIVE?: true #boolean
   TOOLS: #[lists starts with -]
   - linux
   - shell
