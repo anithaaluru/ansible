@@ -23,6 +23,7 @@
 
   - name: convert lists to dictionary
     vars:
+     course:
      - {'key': 'name', 'value': 'ansible'}
      - {'key': 'duration', 'value': '2hrs'}
      - {'key': 'trainer', 'value': 'sivakumar'}
