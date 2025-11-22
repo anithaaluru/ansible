@@ -37,3 +37,9 @@
     ansible.builtin.debug:
      msg: "hello, {{ name | upper }}"
      
+  - name: convert to lowercase
+    vars:
+     name: ANITHA ALURU
+    ansible.builtin.debug:
+     msg: "hello, {{ name | lower }}"
+     
