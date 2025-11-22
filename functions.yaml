@@ -42,4 +42,10 @@
      name: ANITHA ALURU
     ansible.builtin.debug:
      msg: "hello, {{ name | lower }}"
+
+  - name: check ip address is valid or not
+    vars:
+     IP: 345.567.424.838
+    ansible.builtin.debug:
+     msg: "is {{ IP | ansible.utils.ipaddr}}"
      
