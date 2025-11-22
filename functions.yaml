@@ -11,3 +11,12 @@
   - name: convert string to list
     ansible.builtin.debug:
      msg: "hello,{{ persons | split(',') }}"
+  
+  - name: convert dictionary to items
+    vars:
+     course:
+      name: ansible
+      duration: 2hrs
+      trainer: sivakumar
+    ansible.builtin.debug:
+     msg: "hello,{{ course | dict2items }}"
