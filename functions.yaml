@@ -1,8 +1,8 @@
-- name: functions in ansible playbook
+- name: functions
   hosts: local
   connection: local
   vars:
-   persons: "ramesh,suresh,anji,malthi"
+    persons: "ramesh, suresh, anji, malthi"
   tasks:
   - name: print undefined variable
     ansible.builtin.debug:
