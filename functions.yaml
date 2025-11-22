@@ -1,14 +1,14 @@
 - name: functions
   hosts: local
   connection: local
-  vars:
-    persons: "ramesh, suresh, anji, malthi"
+  # vars:
+  #   persons: "ramesh, suresh, anji, malthi"
   tasks:
   - name: print undefined variable
     ansible.builtin.debug:
      msg: "hello,{{ person | default('ramesh') }}"
   
-  tasks:
-  - name: convert string to list
-    ansible.builtin.debug:
-     msg: "hello,{{ persons | split(',') }}"
+  # tasks:
+  # - name: convert string to list
+  #   ansible.builtin.debug:
+  #    msg: "hello,{{ persons | split(',') }}"
