@@ -19,13 +19,21 @@
       duration: 2hrs
       trainer: sivakumar
     ansible.builtin.debug:
-     msg: "hello,{{ course | dict2items }}"
+     msg: "hello,course info {{ course | dict2items }}"
 
   - name: convert lists to dictionary
     vars:
      course:
      - {'key': 'name', 'value': 'ansible'}
      - {'key': 'duration', 'value': '2hrs'}
-     - {'key': 'trainer', 'value': 'sivakumar'}
+     - {'key': 'trainer', 'value': 'sivakumar'} 
     ansible.builtin.debug:
-     msg: "hello,{{ course | items2dict }}"
+     msg: "hello,course info {{ course | items2dict }}"
+
+  
+  - name: convert to uppercase
+    vars:
+     name: anitha aluru
+    ansible.builtin.debug:
+     msg: "hello, {{ name | uppercase }}"
+     
