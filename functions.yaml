@@ -12,7 +12,7 @@
     ansible.builtin.debug:
      msg: "hello,{{ persons | split(',') }}"
   
-  - name: convert dictionary to items
+  - name: convert dictionary to lists
     vars:
      course:
       name: ansible
@@ -20,3 +20,11 @@
       trainer: sivakumar
     ansible.builtin.debug:
      msg: "hello,{{ course | dict2items }}"
+
+  - name: convert lists to dictionary
+    vars:
+     - {'key': 'name', 'value': 'ansible'}
+     - {'key': 'duration', 'value': '2hrs'}
+     - {'key': 'trainer', 'value': 'sivakumar'}
+    ansible.builtin.debug:
+     msg: "hello,{{ course | items2dict }}"
