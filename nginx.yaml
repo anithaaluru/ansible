@@ -1,12 +1,13 @@
 - name: install and start nginx
-  hosts: frontend
+  hosts: dynamic_frontend
   become: yes #sudo access
   tasks:
   - name: install the nginx
     ansible.builtin.package:
       name: nginx
-      state: present
+      state: installed
   - name: start the nginx
     ansible.builtin.service:
       name: nginx
       state: started
+      enabled: yes
